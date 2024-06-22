@@ -1,0 +1,574 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #f5effd;
+    color: #222;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;    
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    color: #0e0e0e;
+    text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: rgb(134, 2, 200);
+}
+
+section .s1{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5effd;
+}
+
+.left {
+    color: rgb(153, 0, 255);
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin: 0 95px;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around   ;
+    margin-top: 80px;
+}
+
+.firstsection>div {
+    width: 30%;
+}
+
+.left-section {
+    font-size: 2.9rem;
+    margin: 80px 0;
+    padding: 0 60px;
+    padding-top: 80px;
+}
+
+.right-section img{
+    width: 120%;
+    height: 95%;
+    margin-bottom: 5px;
+    margin-left: 0;
+    position: relative;
+}
+
+.blue {
+    color: rgb(134, 2, 200);
+    font-weight: bolder;
+}
+
+.btn {
+    background-color: rgb(94, 0, 135);
+    color: #fff;
+    padding: 10px 14px;
+    font-size: 16px;
+    margin-top: 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover {
+    color: #fff;
+    background-color: rgb(94, 0, 135);
+    border: 2px solid rgb(94, 0, 135);
+    transition: .5s;
+}
+.btn1 {
+    color: rgb(94, 0, 135);
+    background-color: #fff;
+    padding: 10px 14px;
+    font-size: 16px;
+    margin-top: 20px;
+    border: 2px solid rgb(94, 0, 135);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn1:hover {
+    color: #fff;
+    background-color: rgb(94, 0, 135);
+    transition: .5s;
+}
+
+.line {
+    width: 60rem;
+    border: 5px solid #470e6d;
+}
+
+ footer{
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 10px;
+}
+footer p{
+    margin-top: 10px;
+    margin-left: 40%;
+    margin-right: 38%;
+}
+
+/*Contact Me CSS*/
+
+.frm {
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 80px 80px;
+}
+
+.frm .f1 {
+    background-color: #fff;
+    width: 45%;
+    height: auto;
+    margin: 52px 50px;
+    padding-top: 52px;
+    padding-left: 63px;
+    padding-right: 63px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-radius: 3px;
+}
+.f1 h2{
+    color: rgb(134, 2, 200);
+    font-size: 30px;
+}
+.f1 .name{
+    margin-top: 38px;
+    border-radius: 3px;
+}
+.f1 .email{
+    margin-top: 18px;
+    border-radius: 3px;
+}
+.f1 input{
+    font-size: 16px;
+    padding-left: 8px;
+    background-color: #efceff;
+    border: none;
+}
+.f1 textarea{
+    font-size: 16px;
+    padding-left: 8px;
+    padding-top: 10px;
+    background-color: #efceff;
+    border: none;
+}
+.f1 ::placeholder{
+    color: rgb(87, 87, 113);
+    font-size: 16px;
+    padding: 0 0;
+}
+.f1 button{
+    padding: 10px 34%;
+    margin: 28px 0;
+    border-radius: 3px;
+    background-color: rgb(134, 2, 200);
+    color: #eff4fd;
+    cursor: pointer;
+    border: none;
+}
+
+.info h3{
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(134, 2, 200);
+    margin-top: 24%;
+    margin-left: 18px;
+}
+.info p{
+    color: #0e0e0e;
+}
+.info p i{
+    font-size: 18px;
+    color: #0e0e0e;
+    margin: 20px 20px;
+}
+.info #p1{
+    margin-left: 57px;
+    color: grey;
+}
+.info i{
+    font-size: 30px;
+    color: #0e0e0e;
+    margin: 20px 20px;
+}
+.info a i:hover{
+    color: rgb(134, 2, 200);
+    transition: .5s;
+}
+
+/* About me CSS */
+
+.about  h1{
+    font-weight: bold;
+    font-size: 33px;
+    margin: 30px 0;
+    padding-left: 44%;
+}
+.myinfo{
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.myinfo .my{
+    margin-top: 85px;
+    margin-right: 90px;
+    padding-right: 125px;
+}
+.myinfo .mypic{
+    margin: 40px 80px;
+    padding: 18px 100px;
+}
+.mypic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    position: relative;
+}
+.my h2{
+    font-size: 30px;
+}
+.my #p{
+    color: grey;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.my #p1{
+    color: grey;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.myedu{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.myedu .secondary{
+    background-color: #fff;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    height: 85%;
+    margin: 30px 60px;
+}
+.myedu .secondary:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+}
+.myedu .higher{
+    background-color: #fff;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    height: 85%;
+    margin: 30px 60px;
+}
+.myedu .higher:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+}
+.myedu .running{
+    background-color: #fff;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    height: 85%;
+    margin: 30px 60px;
+}
+.myedu .running:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+}
+
+.myedu #t1{
+    color: rebeccapurple;
+    margin: 30px 20px;
+}
+.myedu #n1{
+    color: #0e0e0e;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+}
+.myedu #s1{
+    display: inline-block;
+    background-color: burlywood;
+    margin: 5px 20px;
+    padding: 5px 5px;
+}
+.myedu #d1{
+    color: grey;
+    margin-top: 5px ;
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+.h{
+    font-size: 22px;
+    margin-top: 30px;
+    padding: 1% 45%;
+    justify-content: center;
+    background-color: #fff;
+}
+.skill{
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 50px;
+}
+.first{
+    width: 600px;
+    height: 500px;
+    padding: 0px 90px;
+    margin-left: 4%;
+}
+.heading{
+    font-size: 30px;
+    color: rgb(121, 53, 167);
+    margin-top: 30%;
+    margin-right: 40%;
+    justify-content: center;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+.bar{
+    font-size: 23px;
+}
+.bar i{
+    font-size: 28px;
+}
+.technicalbar .bar{
+    margin: 40px 0;
+}
+.technicalbar .br:first-child{
+    margin-top: 0;
+}
+.technicalbar .bar:last-child{
+    margin-bottom: 0;
+}
+.technicalbar .bar .info{
+    margin-bottom: 5px;
+}
+.technicalbar .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+}
+.technicalbar .bar .progress-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+@keyframes animate{
+    100%{
+        transform:scaleX(1);
+    }
+}
+.technicalbar .bar .progress-line span{
+    height: 100%;
+    background-color: rgb(153, 0, 255);
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.progress-line.html span{
+    width: 90%;
+}
+.progress-line.css span{
+    width: 85%;
+}
+.progress-line.javascript span{
+    width: 70%;
+}
+.progress-line.dbms span{
+    width: 80%;
+}
+.progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+.progress-line.html span::after{
+    content: "90%";
+}
+.progress-line.css span::after{
+    content: "85%";
+}
+.progress-line.javascript span::after{
+    content: "70%";
+}
+.progress-line.dbms span::after{
+    content: "80%";
+}
+.progress-line span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+
+
+/* Services CSS */
+
+.head h2{
+    margin-top: 40px;
+    margin: 40px 45%;
+    color: rgb(86, 86, 86);
+}
+.head h5{
+    font-size: 27px;
+    margin-left: 41%;
+}
+.services{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 95px;
+}
+.one{
+    background-color: #fff;
+    margin: 0 70px;
+    height: 20rem;
+}
+.services i{
+    margin-top: 45px;
+    margin-left: 26px;
+    font-size: 24px;
+    color: rgb(153, 0, 255); 
+}
+.services h3{
+    margin: 25px;
+    font-size: 20px;
+}
+.services p{
+    color: rgb(95, 95, 95);
+    margin: 13px 24px;
+    font-size: 17px;
+}
+.services .two{
+    background-color: #fff;
+    margin: 0 70px;
+    height: 20rem;
+}
+.services .three{
+    background-color: #fff;
+    margin: 0 70px;
+    height: 20rem;
+}
+.services a{
+    color: #000;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-color: rgb(153, 0, 255);
+    text-decoration-thickness: 3px;
+    font-size: 17px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 70px;
+}
+.services a:hover{
+    color: grey;
+}
+
+
+/* Project CSS */
+
+.title h2{
+    margin-top: 40px;
+    margin: 40px 45%;
+    color: rgb(86, 86, 86);
+}
+.title h5{
+    font-size: 27px;
+    margin-left: 41%;
+}
+.project{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 95px;
+}
+.a1{
+    background-color: #fff;
+    margin: 0 70px;
+    height: auto;
+}
+.project img{
+    height: 190px;
+    width: 210px;
+    padding: 20px 55px;
+}
+.project h3{
+    text-align: center;
+    margin: 25px;
+    font-size: 20px;
+}
+.project p{
+    color: rgb(95, 95, 95);
+    margin: 13px 24px;
+    font-size: 17px;
+}
+.project button{
+    margin: 20px 120px;
+    padding: 10px 10px;
+    border: 2px solid #000;
+    background-color: #eff4fd;
+    border-radius: 3px;
+}
+
+
+
